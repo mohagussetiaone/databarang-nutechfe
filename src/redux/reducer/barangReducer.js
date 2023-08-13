@@ -7,23 +7,23 @@ const init_state = {
 
 const BarangReduce = (state = init_state, action) => {
   switch (action.type) {
-    case ActionTypeBarang.GET_BANK_SUCCESS:
+    case ActionTypeBarang.GET_BARANG_SUCCESS:
       return GetBarang(state, action);
-    case ActionTypeBarang.ADD_BANK_REQUEST:
+    case ActionTypeBarang.ADD_BARANG_REQUEST:
       return { ...state };
-    case ActionTypeBarang.ADD_BANK_SUCCESS:
+    case ActionTypeBarang.ADD_BARANG_SUCCESS:
       return AddBarang(state, action);
-    case ActionTypeBarang.FIND_BANK_REQUEST:
+    case ActionTypeBarang.FIND_BARANG_REQUEST:
       return { ...state };
-    case ActionTypeBarang.FIND_BANK_SUCCESS:
+    case ActionTypeBarang.FIND_BARANG_SUCCESS:
       return FindBarang(state, action);
-    case ActionTypeBarang.EDIT_BANK_REQUEST:
+    case ActionTypeBarang.EDIT_BARANG_REQUEST:
       return { ...state };
-    case ActionTypeBarang.EDIT_BANK_SUCCESS:
+    case ActionTypeBarang.EDIT_BARANG_SUCCESS:
       return EditBarang(state, action);
-    case ActionTypeBarang.DEL_BANK_REQUEST:
+    case ActionTypeBarang.DEL_BARANG_REQUEST:
       return { ...state };
-    case ActionTypeBarang.DEL_BANK_SUCCESS:
+    case ActionTypeBarang.DEL_BARANG_SUCCESS:
       return DeleteBarang(state, action);
     default:
       return { ...state };
